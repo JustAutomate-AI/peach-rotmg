@@ -47,5 +47,6 @@ The `.class` files these produce are gitignored; only the sources are kept.
 | `SpriteProbe` | whether a sprite id resolves to a picture |
 | `TestModeShot` | the overlay's test marks |
 | `TexProbe` | raw texture lookups |
+| `SettingsShot` | the Settings page, rendered offscreen |
 | `ThemeShot` | every theme and accent, side by side |
 | `TotalProbe` | totals the damage model produces for a known fight |
