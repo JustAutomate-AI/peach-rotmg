@@ -99,9 +99,7 @@ deployed to the test install at `E:\cyanb\Documents\Peach Test` with `tools\depl
 Jordan to try first. Bump `Updater.CURRENT`, add a `CHANGELOG.md` section in plain language, then
 release.
 
-**`gh` needs `-R JustAutomate-AI/sonar-rotmg` on every command.** The clone still has an
-`upstream` remote pointing at the project Sonar came from; a bare `gh release list`
-silently answers for *that* instead.
+**`gh` wants `-R JustAutomate-AI/sonar-rotmg`** when run from anywhere but the repo root.
 
 ## House style
 
