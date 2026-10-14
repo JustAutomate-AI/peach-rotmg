@@ -85,6 +85,28 @@ public final class MvpSamples {
         finish(f);
         write(dir, "6-shatters-three-bosses.png", f);
 
+        // 7. joined the run late, but the boss fight itself began after Sonar was listening:
+        //    a complete record of the fight that matters, and it should say so
+        LiveModel g = run("Unknown area");
+        g.joined = true;
+        LiveModel.Target clean = boss(g, "Oryx the Mad God 3", true, 10_100_000, 141_000);
+        clean.missed = 0;
+        add(clean, player(1, "Zephyra", "Samurai", 1_149_000, 42_300, 812,
+                new String[]{"Damage Bonus IV" + NL + "FireRate Bonus II", "Attack Bonus I", "Defense Bonus II", "Dexterity Bonus II"}));
+        finish(g);
+        write(dir, "7-joined-but-boss-complete.png", g);
+
+        // 8. walked in on the boss already at 40% health: the share-of-health figure would
+        //    flatter whoever was watching, so it is replaced by what was missed
+        LiveModel h = run("Unknown area");
+        h.joined = true;
+        LiveModel.Target late = boss(h, "The Forgotten King", true, 500_000, 74_000);
+        late.missed = 0.60;
+        add(late, player(1, "Zephyra", "Samurai", 182_000, 15_100, 300,
+                new String[]{"Damage Bonus IV", "", "Defense Bonus II", ""}));
+        finish(h);
+        write(dir, "8-joined-mid-boss.png", h);
+
         System.out.println("done");
     }
 
