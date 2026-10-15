@@ -25,8 +25,10 @@ Settings keys are `sonar.*`; `Settings.migrate()` renames leftover `peach.*` key
 startup. Developer switches are `-Dsonar.demo`, `-Dsonar.shot`, `-Dsonar.monitor`,
 `-Dsonar.selftest`.
 
-Only two things still say `peach`, both correctly: `Settings.OLD`, the prefix being
-migrated away from, and the accent colour named "Peach".
+One thing still says `peach`, correctly: `Settings.OLD`, the prefix being migrated
+away from. It has to keep the old spelling to recognise the keys it renames. The accent
+once named "Peach" became "Salmon" in 2.8.0, with the old name still accepted when read
+back so nobody loses their choice.
 
 ### Provenance, and what must not be deleted
 
@@ -95,7 +97,7 @@ java "-Dsonar.demo=1" "-Dsonar.selftest=1" "-Dsonar.shot=<path>" "-Dsonar.monito
 ## Releases
 
 GitHub releases go out **only on minor bumps** (`x.Y.0`), never on patches. Patch work is
-deployed to the test install at `E:\cyanb\Documents\Peach Test` with `tools\deploy-test.ps1` for
+deployed to the test install at `E:\cyanb\Documents\Sonar Test` with `tools\deploy-test.ps1` for
 Jordan to try first. Bump `Updater.CURRENT`, add a `CHANGELOG.md` section in plain language, then
 release.
 

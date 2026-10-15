@@ -14,7 +14,7 @@ exists.
 Build the app first, so `run\Sonar.jar` is current, then:
 
 ```powershell
-cd E:\cyanb\.peach-workshop
+cd <your checkout>
 & "C:\Program Files\Eclipse Adoptium\jdk-17.0.20.8-hotspot\bin\javac.exe" `
     -cp run\Sonar.jar -d probe probe\sonar\ui\ThemeShot.java
 cd run
