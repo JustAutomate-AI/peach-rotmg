@@ -12,15 +12,15 @@ import java.io.File;
 public final class BarText {
 
     private static final String[][] WHO = {
-            {"Zephyra", "Samurai"}, {"Cooosplay", "Knight"}, {"VisualBug", "Archer"},
-            {"Mistral", "Wizard"}, {"ZBlab", "Necromancer"}, {"Jox", "Huntress"},
-            {"MrMegaMix", "Warrior"}, {"Kozhler", "Rogue"}, {"RazerTo", "Mystic"},
+            {"Jacke", "Samurai"}, {"Disconiw", "Knight"}, {"Arthritiss", "Archer"},
+            {"Nyjacky", "Wizard"}, {"Epicobil", "Necromancer"}, {"Winnieeeee", "Huntress"},
+            {"Nihao", "Warrior"}, {"XImagiinex", "Rogue"}, {"RazerTo", "Mystic"},
             {"Shivaloma", "Paladin"}, {"Perturbed", "Priest"}, {"Kyoto", "Sorcerer"},
     };
 
     private static final long[] DAMAGE = {
-            1_149_000, 492_000, 467_000, 454_000, 450_000, 340_000,
-            290_000, 288_000, 287_000, 254_000, 224_000, 152_000};
+            1_149_000, 40_000, 22_000, 14_000, 9_000, 6_000,
+            4_000, 3_000, 2_000, 1_500, 900, 400};
 
     public static void main(String[] args) throws Exception {
         System.setProperty("java.awt.headless", "true");
