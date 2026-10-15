@@ -57,6 +57,24 @@ public final class StatMaxing {
                     new int[]{795, 335, 69, 49, 65, 84, 59, 84},
                     new int[]{45, -15, 9, 24, 12, 19, 19, 9},
                     new int[]{0, 0, 0, 0, 7, 0, 0, 0}),
+
+            // A Necromancer finished on all eight, carrying the steepest blood ritual. Her
+            // health comes back one point ABOVE the class ceiling - 701 against 700 - because
+            // the game rounds the stat it reports and the boost it reports separately, and
+            // with a negative boost the two roundings can disagree by one. Nothing is owed.
+            new Seen("MorlinFish", "Necromancer",
+                    new int[]{633, 540, 85, 39, 55, 68, 61, 94},
+                    new int[]{-68, 140, 10, 14, 5, 8, 21, 19},
+                    new int[]{0, 0, 0, 0, 0, 0, 0, 0}),
+
+            // The same one point over, on dexterity, with no blood ritual anywhere near it -
+            // this Archer simply wears something that costs speed and dexterity, and a
+            // negative boost is a negative boost whatever put it there. Kept because it
+            // proves the cause is the rounding and not the ritual.
+            new Seen("VinCal", "Archer",
+                    new int[]{898, 360, 105, 50, 52, 47, 54, 57},
+                    new int[]{148, 60, 30, 25, -3, -4, 14, 7},
+                    new int[]{0, 0, 0, 0, 0, 0, 0, 0}),
     };
 
     public static void main(String[] args) throws Exception {
