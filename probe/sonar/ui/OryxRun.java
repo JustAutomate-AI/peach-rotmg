@@ -75,10 +75,10 @@ public class OryxRun {
     }
 
     private static final String[] NAMES = {
-            "Zephyra", "Cooosplay", "ZBlab", "VisualBug", "Mistral", "MrMegaMix", "Jox", "Zendelski",
-            "Shivaloma", "Kozhler", "RazerTo", "Perturbed", "ChiiLlll", "Fdsfsfa", "Kyoto", "Badadvice",
-            "WiZardhekk", "Lordeath", "Ikeno", "ScarletRose", "DarkMw", "DeadGreg", "PootPigeon",
-            "Majesty", "Trashboytt", "BurnsBoi", "Kadenkad", "KJB", "Miaushan", "Keljhan", "Jacke",
+            "Username9", "Username10", "Username11", "Username12", "Username13", "Username14", "Username15", "Username16",
+            "Username17", "Username18", "Username19", "Username20", "Username21", "Username22", "Username23", "Username24",
+            "Username25", "Username26", "Username27", "ScarletRose", "DarkMw", "DeadGreg", "PootPigeon",
+            "Majesty", "Trashboytt", "BurnsBoi", "Kadenkad", "KJB", "Miaushan", "Keljhan", "Username1",
             "WryChaos", "KillaWag", "IHC", "Scrupter", "Soulthz", "Slumppp", "JuiceMePls", "XinW",
             "Dayklab", "Software", "CoalNecro", "Asstaroth", "oxy", "Vorkath", "AstroFP"};
 }

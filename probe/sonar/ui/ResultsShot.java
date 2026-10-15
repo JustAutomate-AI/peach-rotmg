@@ -12,9 +12,9 @@ public final class ResultsShot {
         LiveModel m = new LiveModel();
         m.instance = "Lost Halls";
         m.tracked = true;
-        String[][] who = {{"Jacke","Samurai"},{"Disconiw","Knight"},{"Arthritiss","Archer"},
-                {"Nyjacky","Wizard"},{"Epicobil","Necromancer"},{"Winnieeeee","Huntress"},
-                {"Nihao","Warrior"},{"XImagiinex","Rogue"}};
+        String[][] who = {{"Username1","Samurai"},{"Username2","Knight"},{"Username3","Archer"},
+                {"Username4","Wizard"},{"Username5","Necromancer"},{"Username6","Huntress"},
+                {"Username7","Warrior"},{"Username8","Rogue"}};
         long[] dmg = {1_149_000, 390_000, 345_000, 300_000, 255_000, 210_000, 175_000, 140_000};
         LiveModel.Target t = new LiveModel.Target();
         t.name = "Marble Colossus";
@@ -36,7 +36,16 @@ public final class ResultsShot {
         m.groups.add(grp);
         m.whole.rows.addAll(t.rows);
         m.whole.total = t.total;
-        BufferedImage img = ResultsImage.renderByBoss(m);
+        // two who did not see the end, so the tags beside their names can be looked at
+        m.completionKnown = true;
+        m.whole.rows.get(2).completed = false;
+        m.whole.rows.get(2).leftAtMs = 150_000;
+        m.whole.rows.get(5).completed = false;
+        m.whole.rows.get(5).leftAtMs = 282_000;
+        m.whole.rows.get(5).died = true;
+        // the full roster view, which is the one carrying the NEXUS and DIED tags beside names
+        BufferedImage img = a.length > 1 && "boss".equals(a[1])
+                ? ResultsImage.renderByBoss(m) : ResultsImage.render(m);
         ImageIO.write(img, "png", new File(a[0]));
         System.out.println("wrote " + a[0] + "  " + img.getWidth() + "x" + img.getHeight());
     }

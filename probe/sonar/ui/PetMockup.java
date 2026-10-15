@@ -24,7 +24,7 @@ public final class PetMockup {
             {0x7696, "Spectral Skeledragon", "Spooky", "Divine"},
     };
 
-    private static final String[] WHO = {"Zephyra", "Cooosplay", "VisualBug", "Mistral", "ZBlab", "Jox"};
+    private static final String[] WHO = {"Username9", "Username10", "Username12", "Username13", "Username11", "Username15"};
     private static final String[] CLS = {"Samurai", "Knight", "Archer", "Wizard", "Necromancer", "Huntress"};
     private static final int[] SKINS = {0x0342, 0x0347, 0x0343, 0x0344, 0x0344, 0x0343};
     private static final long[] DMG = {1150000, 493000, 468000, 455000, 451000, 341000};
@@ -149,7 +149,7 @@ public final class PetMockup {
         int tx = 22 + 84 + 18;
         g.setFont(SonarTheme.bold(24f));
         g.setColor(SonarTheme.TEXT);
-        g.drawString("Zephyra", tx, y + 30);
+        g.drawString("Username9", tx, y + 30);
         g.setFont(SonarTheme.font(13f));
         g.setColor(SonarTheme.MUTED);
         g.drawString("Samurai", tx, y + 52);

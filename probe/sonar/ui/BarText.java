@@ -12,10 +12,10 @@ import java.io.File;
 public final class BarText {
 
     private static final String[][] WHO = {
-            {"Jacke", "Samurai"}, {"Disconiw", "Knight"}, {"Arthritiss", "Archer"},
-            {"Nyjacky", "Wizard"}, {"Epicobil", "Necromancer"}, {"Winnieeeee", "Huntress"},
-            {"Nihao", "Warrior"}, {"XImagiinex", "Rogue"}, {"RazerTo", "Mystic"},
-            {"Shivaloma", "Paladin"}, {"Perturbed", "Priest"}, {"Kyoto", "Sorcerer"},
+            {"Username1", "Samurai"}, {"Username2", "Knight"}, {"Username3", "Archer"},
+            {"Username4", "Wizard"}, {"Username5", "Necromancer"}, {"Username6", "Huntress"},
+            {"Username7", "Warrior"}, {"Username8", "Rogue"}, {"Username19", "Mystic"},
+            {"Username17", "Paladin"}, {"Username20", "Priest"}, {"Username23", "Sorcerer"},
     };
 
     private static final long[] DAMAGE = {

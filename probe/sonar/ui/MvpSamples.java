@@ -26,11 +26,11 @@ public final class MvpSamples {
         // 1. the ordinary case: a final boss, a fully enchanted kit
         LiveModel a = run("Oryx's Sanctuary");
         LiveModel.Target oryx = boss(a, "Oryx the Mad God 3", true, 10_100_000, 141_000);
-        add(oryx, player(1, "Zephyra", "Samurai", 1_149_000, 42_300, 812,
+        add(oryx, player(1, "Username9", "Samurai", 1_149_000, 42_300, 812,
                 new String[]{"Damage Bonus IV" + NL + "FireRate Bonus II", "Attack Bonus I", "Defense Bonus II", "Dexterity Bonus II"}));
-        add(oryx, player(2, "Cooosplay", "Knight", 492_000, 18_100, 410, blank()));
+        add(oryx, player(2, "Username10", "Knight", 492_000, 18_100, 410, blank()));
         LiveModel.Target bishop = boss(a, "Archbishop Leucoryx", false, 1_200_000, 48_000);
-        add(bishop, player(1, "Zephyra", "Samurai", 610_000, 21_000, 400, blank()));
+        add(bishop, player(1, "Username9", "Samurai", 610_000, 21_000, 400, blank()));
         finish(a);
         write(dir, "1-standard.png", a);
 
@@ -76,12 +76,12 @@ public final class MvpSamples {
         archmage.objectType = sprite(0x715d, "Twilight Archmage");
         LiveModel.Target fk = boss(f, "The Forgotten King", true, 500_000, 128_000);
         fk.objectType = sprite(0x716f, "The Forgotten King");
-        add(sentinel, player(1, "Zephyra", "Samurai", 96_000, 7_100, 210,
+        add(sentinel, player(1, "Username9", "Samurai", 96_000, 7_100, 210,
                 new String[]{"Damage Bonus IV", "", "", ""}));
-        add(sentinel, player(2, "Cooosplay", "Knight", 141_000, 9_200, 260, blank()));
-        add(fk, player(1, "Zephyra", "Samurai", 232_400, 18_900, 420,
+        add(sentinel, player(2, "Username10", "Knight", 141_000, 9_200, 260, blank()));
+        add(fk, player(1, "Username9", "Samurai", 232_400, 18_900, 420,
                 new String[]{"Damage Bonus IV" + NL + "FireRate Bonus II", "Attack Bonus I", "Defense Bonus II", "Dexterity Bonus II"}));
-        add(fk, player(2, "Cooosplay", "Knight", 150_000, 11_000, 310, blank()));
+        add(fk, player(2, "Username10", "Knight", 150_000, 11_000, 310, blank()));
         finish(f);
         write(dir, "6-shatters-three-bosses.png", f);
 
@@ -91,7 +91,7 @@ public final class MvpSamples {
         g.joined = true;
         LiveModel.Target clean = boss(g, "Oryx the Mad God 3", true, 10_100_000, 141_000);
         clean.missed = 0;
-        add(clean, player(1, "Zephyra", "Samurai", 1_149_000, 42_300, 812,
+        add(clean, player(1, "Username9", "Samurai", 1_149_000, 42_300, 812,
                 new String[]{"Damage Bonus IV" + NL + "FireRate Bonus II", "Attack Bonus I", "Defense Bonus II", "Dexterity Bonus II"}));
         finish(g);
         write(dir, "7-joined-but-boss-complete.png", g);
@@ -102,7 +102,7 @@ public final class MvpSamples {
         h.joined = true;
         LiveModel.Target late = boss(h, "The Forgotten King", true, 500_000, 74_000);
         late.missed = 0.60;
-        add(late, player(1, "Zephyra", "Samurai", 182_000, 15_100, 300,
+        add(late, player(1, "Username9", "Samurai", 182_000, 15_100, 300,
                 new String[]{"Damage Bonus IV", "", "Defense Bonus II", ""}));
         finish(h);
         write(dir, "8-joined-mid-boss.png", h);
