@@ -292,7 +292,7 @@ final class LiveDemoAccount {
         PartyFinder.sawList(data);
 
         // the party the user is in, so the page has an "own party" to mark
-        String[] names = {"You", "Zephyra", "Cooosplay", "ZBlab", "VisualBug", "Mistral"};
+        String[] names = {"You", "Username1", "Username2", "Username3", "Username4", "Username5"};
         sonar.packets.data.PartyPlayerData[] members = new sonar.packets.data.PartyPlayerData[names.length];
         for (int i = 0; i < names.length; i++) {
             sonar.packets.data.PartyPlayerData pp = new sonar.packets.data.PartyPlayerData();

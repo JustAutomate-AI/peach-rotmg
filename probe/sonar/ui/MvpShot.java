@@ -23,13 +23,13 @@ public final class MvpShot {
         m.tracked = true;
 
         LiveModel.Target oryx = boss("Oryx the Mad God 3", true, 10_100_000, 141_000);
-        oryx.rows.add(player(1, "Zephyra", "Samurai", 1_149_000, 42_300, 812,
+        oryx.rows.add(player(1, "Username1", "Samurai", 1_149_000, 42_300, 812,
                 new String[]{"Damage Bonus IV" + NL + "FireRate Bonus II", "Attack Bonus I", "", "Dexterity Bonus II"}));
-        oryx.rows.add(player(2, "Cooosplay", "Knight", 492_000, 18_100, 410,
+        oryx.rows.add(player(2, "Username2", "Knight", 492_000, 18_100, 410,
                 new String[]{"", "", "", ""}));
 
         LiveModel.Target mini = boss("Archbishop Leucoryx", false, 1_200_000, 48_000);
-        mini.rows.add(player(1, "Zephyra", "Samurai", 610_000, 21_000, 400,
+        mini.rows.add(player(1, "Username1", "Samurai", 610_000, 21_000, 400,
                 new String[]{"", "", "", ""}));
 
         m.targets.add(oryx);
